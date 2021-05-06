@@ -1,0 +1,22 @@
+Bandit Level 14 → Level 15
+Level Goal
+
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+Commands you may need to solve this level
+
+ssh, telnet, nc, openssl, s_client, nmap
+
+
+Username 
+Bandit14
+Password
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+===================================================================================
+ssh bandit14@bandit.labs.overthewire.org -p 2220 
+password: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+ls
+telnet localhost 30000
+password: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+
