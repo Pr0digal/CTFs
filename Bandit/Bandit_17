@@ -16,3 +16,18 @@ ssh bandit16@bandit.labs.overthewire.org -p 2220
 cluFn7wTiGryunymYOu4RcffSxQluehd
 nmap -p 31000-32000 localhost
 
+
+
+
+nmap -p 31000-32000 localhost
+nmap -Sv -p- localhost
+openssl s_client -connect localhost:31790
+Enter Password: cluFn7wTiGryunymYOu4RcffSxQluehd
+Copy the Private key
+cd /tmp/
+mkdir test123
+touch privatekey.private
+chmod 400 privatekey.private
+ssh bandit14@localhost -i privatekey.private
+cat /etc/bandit_pass/bandit17
+xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
