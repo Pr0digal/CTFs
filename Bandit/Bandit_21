@@ -19,4 +19,12 @@ GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 
 ssh bandit20@bandit.labs.overthewire.org
 password: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+ls -l
+nmap localhost
+nc -lp 1337 (Pick any port not listed)
+Open another Terminal log in
+./suconnect 1337
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+enter In first terminal GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
