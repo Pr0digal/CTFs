@@ -1,0 +1,26 @@
+Bandit Level 29 → Level 30
+Level Goal
+There is a git repository at ssh://bandit29-git@localhost/home/bandit29-git/repo. The password for the user bandit29-git is the same as for the user bandit29.
+
+Clone the repository and find the password for the next level.
+
+Commands you may need to solve this level
+git
+
+Username
+Bandit29
+Password
+bbc96594b4e001778eee9975372716b2
+====================================================================================================
+
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+password: bbc96594b4e001778eee9975372716b2
+mkdir /tmp/bandit29
+chmod 777 /tmp/bandit29
+git clone ssh://bandit29-git@localhost/home/bandit29-git/repo
+bbc96594b4e001778eee9975372716b2
+cd /repo 
+git status
+git checkout dev 
+git show
+5b90576bedb2cc04c86a9e924ce42faf
